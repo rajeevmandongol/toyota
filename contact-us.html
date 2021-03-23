@@ -1,0 +1,177 @@
+<style></style>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Vehicles</title>
+    <title>Our Vehicles &#8211; Toyota Nepal</title>
+    <link
+      rel="stylesheet"
+      id="fonts-css"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans%3Aital%2Cwght%400%2C300%3B0%2C400%3B0%2C500%3B1%2C300%3B1%2C400&#038;display=swap&#038;ver=1.0"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="fonts-awesome-css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css?ver=1.0"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="fonts-lato-css"
+      href="https://fonts.googleapis.com/css2?family=Lato%3Aital%2Cwght%400%2C300%3B0%2C400%3B0%2C700%3B1%2C300%3B1%2C400&#038;display=swap&#038;ver=1.0"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="main-css"
+      href="css/style.css"
+      type="text/css"
+      media="all"
+    />
+
+    <style>
+      #second-section svg {
+        height: 60px;
+      }
+
+      .benefits p {
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav id="main-nav" class="m-b-40">
+      <div class="container">
+        <div><a href="index.html" class="logo"> Toyota Nepal </a></div>
+        <div>
+          <ul id="primary-menu" class="">
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="our-vehicles.html">Our Vehicles</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="index.html#book-a-test-drive">Book a Test Drive!</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+<div class="container">
+    <div class="card m-b-40">
+        <!--The div element for the map -->
+        <h2 class="text-center p-16">Our Location</h2>
+        <div id="map" style="height: 400px;"></div>
+
+        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvg3s0kdWJDAwXdrEZVWKqpnBRsiiOlyQ&callback=initMap&libraries=&v=weekly" async></script>
+    </div>
+        <div class="card spacing text-justify">
+        <h2 class="text-center">
+            <span class="custom-primary-background box-shadow">
+                </s>Contact Us            </span>
+        </h2>
+        
+    <h4 class="bottom-hr">Head Office</h4>
+        <p>Voith Complex<br>Ananda Nagar, Dhumbarahi<br>Kathmandu</p>
+        <p>+977-1-4008801-5</p>
+        <h4 class="bottom-hr">Branch Office</h4>
+        <p>Lorem Ipsum<br>Kupondole, Lalitpur</p>
+       <p>+977-1-4008801-5</p>
+       
+
+
+    <div class="form-div text-center">
+        <p class="btn primary paragraph box-shadow text-center p-16">Contact Us</p>
+    <form action="" method="post">
+    <div class="form-input-container">
+    <div class="input-container">
+        <i class="fa fa-user icon"></i>
+        <input type="text" placeholder="Name" name="name" class="form-input">
+    </div>
+    <div class="input-container">
+        <i class="fa fa-envelope icon"></i>
+        <input type="text" placeholder="Email" name="name" class="form-input">
+    </div>
+        <div class="input-container">
+        <i class="fa fa-map icon"></i>
+        <input type="text" placeholder="Address" name="name" class="form-input">
+    </div>
+    <div class="input-container">
+        <i class="fa fa-phone icon"></i>
+        <input type="text" placeholder="Contact No." name="name" class="form-input">
+    </div>
+    </div>
+    <textarea placeholder="Type your message here..."></textarea>
+        <button type="submit" name="submit" class="btn primary text-center d-block">Send
+        <i class="fas fa-paper-plane">
+
+    </i>
+    </button>
+    </form>
+</div>
+    </div>
+</div>
+
+<script>
+    // Initialize and add the map
+
+    function initMap() {
+        // The location of Uluru
+        // 27.7221827,85.3437824,15
+        const uluru = {
+            lat: 27.7221827,
+            lng: 85.3437824
+        };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 15,
+            center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+        });
+    }
+</script>
+<footer>
+    <div class="footer-div">
+        <div class="container p-t-b-32-8">
+            <h4>
+                United Traders Syndicate Pvt. Ltd.
+            </h4>
+            <p>
+                Authorised Dealer for Toyota
+            </p>
+            <p>
+                <i class="fas fa-home"></i>
+                VOITH COMPLEX
+            </p>
+            <p>
+                <i class="fas fa-map-marked-alt"></i>
+                Ananda Nagar, Dhumbarahi
+            </p>
+            <p>
+                <i class="fas fa-phone-alt"></i>
+                +977-1-4008801-5
+            </p>
+            <p>
+                <i class="far fa-envelope"></i>
+                vsd@voith.com.np
+            </p>
+        </div>
+        <p class="text-center">Copyright &copy; 2021 - Toyota Nepal. All Rights Reserved</p>
+    </div>
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,524 @@
+/*
+Theme Name: Toyota Nepal dsadas
+Text Domain: Domain
+Version: 1.0
+Description: The is the custom developed theme for Toyota Nepal
+Tags: responsive,
+Author: R
+Author URI: https://rajeevman.com.np
+*/
+
+:root {
+  --primary-color: #ef1a21;
+}
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Lato", sans-serif;
+  background-color: #f1f1f1;
+}
+h4 {
+  font-size: 1.2rem;
+}
+p {
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+}
+.text-center {
+  text-align: center;
+}
+
+.box-shadow {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 40%);
+}
+
+.primary-hr {
+  margin: 16px 0;
+  border: none;
+  border-bottom: 2px solid white;
+}
+.m-b-40 {
+  margin-bottom: 40px;
+}
+.p-32 {
+  padding: 32px;
+}
+.p-16 {
+  padding: 16px;
+}
+.p-b-16 {
+  padding-bottom: 16px;
+}
+.p-t-b-32-8 {
+  padding-top: 32px;
+  padding-bottom: 8px;
+}
+.text-indent {
+  text-indent: 2rem;
+}
+.text-justify {
+  text-align: justify;
+}
+.bg-primary {
+  background-color: var(--primary-color);
+  background-color: red;
+  color: white;
+}
+.container {
+  max-width: 1100px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.container.spacing {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+#main-nav {
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+#main-nav .container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+#main-nav .logo {
+  line-height: 50px;
+  color: white;
+  font-size: 1.25rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+#primary-menu {
+  list-style: none;
+  background-color: var(--primary-color);
+}
+
+#primary-menu {
+  display: flex;
+  /* flex-direction: row; */
+}
+
+#primary-menu li a {
+  text-decoration: none;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  line-height: 50px;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+#primary-menu li:last-of-type a {
+  border: 2px solid white;
+  padding: 8px 10px;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  font-style: italic;
+  margin-left: 16px;
+}
+
+#primary-menu li:last-of-type a:hover {
+  border-color: white;
+  font-weight: 700;
+}
+#primary-menu li a:hover {
+  background-color: white;
+  color: red;
+}
+
+/* Footer starts */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+}
+footer .footer-div p {
+  font-size: 0.9rem;
+  /* color: rgba( 255, 255, 255, 0.8); */
+}
+/* Footer ends */
+
+/* Content starts */
+.card {
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 40%);
+}
+
+.card.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.card.spacing {
+  padding: 32px;
+  margin-bottom: 32px;
+}
+.card p {
+  line-height: 1.4rem;
+}
+.custom-primary-background {
+  text-align: center;
+  background-color: red;
+  color: white;
+  padding: 10px 80px;
+  font-weight: 400;
+  font-size: 1.2rem;
+  border-radius: 100px 0;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+
+.btn.primary {
+  padding: 8px 24px;
+  background-color: var(--primary-color);
+  text-decoration: none;
+  color: white;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  display: inline-block;
+  font-size: 1rem;
+  border: none;
+  transition: all 0.4s ease;
+  border: 2px solid transparent;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn.primary:hover {
+  background-color: white;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.btn.primary.box-shadow:hover {
+  /* box-shadow: none; */
+  /* box-shadow: 0 5px 10px var(--primary-color); */
+}
+
+.btn.primary.paragraph {
+  align-self: center;
+  border-radius: 100px 0;
+  background-color: var(--primary-color);
+  text-decoration: none;
+  color: white;
+  margin-top: 16px;
+  margin-bottom: 32px;
+  display: inline-block;
+  font-size: 1.15rem;
+  padding: 8px 64px;
+}
+
+.btn.primary.paragraph:hover {
+  align-self: center;
+  border-radius: 100px 0;
+  background-color: var(--primary-color);
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  font-size: 1.15rem;
+  font-weight: unset;
+  outline: none;
+}
+
+.bottom-hr {
+  padding-top: 10px;
+  padding-bottom: 8px;
+  border-bottom: 4px solid var(--primary-color);
+}
+
+/* Content ends */
+
+/* Frontpage starts */
+#first-section-heading-h1 {
+  /* float: left; */
+  text-align: left;
+}
+
+#first-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#left-div,
+#right-div {
+  width: 100%;
+  align-self: center;
+  margin-bottom: -4px;
+}
+
+#first-section-heading-h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.card p {
+  /* text-indent: 0; */
+}
+
+.wp-block-image {
+  margin-bottom: 0;
+}
+
+#second-section {
+  text-align: center;
+}
+
+#second-section .benefits {
+  display: flex;
+  flex-direction: row;
+  color: rgba(0, 0, 0, 0.8);
+}
+/* Frontpage ends */
+
+/* Form starts */
+.form-div {
+}
+
+.form-div {
+  width: 600px;
+}
+.form-div .form-input-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px 32px;
+  font-family: "Lato", sans-serif;
+  padding-bottom: 16px;
+}
+.input-container i {
+  color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border: 1px solid grey;
+  border-right: none;
+  width: 40px;
+}
+.input-container {
+  display: flex;
+}
+.form-input {
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid grey;
+  border-left: none;
+}
+
+.form-div textarea {
+  width: 95%;
+  height: 200px;
+  resize: none;
+  font-family: "Lato", sans-serif;
+  margin-bottom: 16px;
+}
+
+.form-div button i {
+  margin-left: 8px;
+}
+
+input.form-input {
+  background-color: transparent;
+}
+.form-input:focus {
+  outline: none;
+}
+/* Form ends */
+
+/* Our Vehicle starts */
+.our-vehicle-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 32px;
+  row-gap: 32px;
+}
+
+.our-vehicle-container .our-vehicle {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.7);
+  box-shadow: none;
+  position: relative;
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+}
+
+.our-vehicle-container .our-vehicle h1 {
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+.our-vehicle-container .our-vehicle:hover {
+  background-color: var(--primary-color);
+  color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.our-vehicle-container .our-vehicle img {
+  width: 80%;
+  display: block;
+  transform: scale(1);
+  transition: transform 0.4s ease-in-out;
+}
+
+.our-vehicle-container .our-vehicle:hover img {
+  transform: scale(1.2);
+}
+
+.our-vehicle-container .our-vehicle img::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+/* Our Vehicle ends */
+
+/* Utilities starts */
+.btn.primary.d-block {
+  display: block;
+}
+/* Utilities ends*/
+
+.contact-data-table {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-spacing: 0;
+  width: 100%;
+  clear: both;
+  margin: 0;
+  text-align: left;
+}
+
+.contact-data-table th {
+  font-weight: 600;
+}
+
+.contact-data-table th,
+td {
+  padding: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  footer .footer-div p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  #main-nav .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  #main-nav .container ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #main-nav .container ul li a {
+    font-size: 1rem;
+    margin-left: 0;
+  }
+  #main-nav .container ul li:last-of-type a {
+    font-size: 0.8rem;
+  }
+
+  .btn.primary {
+    padding: 8px 24px;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    color: white;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    display: inline-block;
+    font-size: 0.9rem;
+  }
+
+  .btn.primary.paragraph,
+  .btn.primary.paragraph:hover {
+    padding: 8px 32px;
+    display: inline-block;
+    font-size: 1rem;
+  }
+
+  #first-section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #second-section {
+    text-align: center;
+  }
+
+  #second-section .benefits {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-div p {
+    font-size: 0.7rem;
+  }
+
+  .form-div {
+    width: auto;
+  }
+
+  .form-div .form-input-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-gap: 16px 32px; */
+    font-family: "Lato", sans-serif;
+    padding-bottom: 16px;
+  }
+
+  .input-container {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+  }
+
+  .input-container .form-input {
+    width: 100%;
+  }
+
+  .form-div textarea {
+    width: 100%;
+  }
+
+  /* Our Vehicle starts */
+  .our-vehicle-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 32px;
+    row-gap: 32px;
+  }
+
+  .our-vehicle-container .our-vehicle h1 {
+    font-size: 1.2rem;
+  }
+
+  .our-vehicle-container .our-vehicle h2 {
+    font-size: 1.1rem;
+  }
+
+  .our-vehicle-container .our-vehicle p {
+    font-size: 1rem;
+  }
+
+  /* Our Vehicle ends */
+}
